@@ -1,7 +1,7 @@
 package rvt;
 import java.util.Scanner;
 
-import javax.swing.plaf.basic.BasicInternalFrameTitlePane.MaximizeAction;
+
 public class Lietotajs_uzd {
     
     public static void main(String[] args){
