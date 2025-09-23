@@ -15,7 +15,7 @@ public class Pasutijuma_parbaude {
          System.out.println("Ievadiet paplaksnu skaitu");
          int paplaksne = reader.nextInt();
 
-         int kop_cena = skruvi*price1+uzgriezni*price2+paplaksne*price3;
+         int kopeja_cena = skruvi*price1+uzgriezni*price2+paplaksne*price3;
 
          if (skruvi > uzgriezni){
             System.out.println("Pa maz uzgrieznu");
@@ -27,7 +27,7 @@ public class Pasutijuma_parbaude {
             System.out.println("Pasutijums ir kartiba");
          }
 
-         System.out.println("Kopeja cena ir: "+ kop_cena);
+         System.out.println("Kopeja cena ir: "+ kopeja_cena);
 
 
 
