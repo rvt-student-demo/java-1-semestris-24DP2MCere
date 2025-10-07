@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Chapter_19 {
     public static void main(String[] args) {
     
-        ex7();
+        ex6();
 
     }
 
@@ -56,7 +56,7 @@ public class Chapter_19 {
 
         System.out.println("Enter high ");
         int high_num = reader.nextInt();
-        
+
         int summa = 0 ;
         while (low_num != high_num + 1) {
             summa = summa + low_num ;
@@ -85,11 +85,14 @@ public class Chapter_19 {
         System.out.println("Enter second word ");
         String word2 = reader.nextLine();
         int dotAmount = 30 - word.length() - word2.length();
-        String dots = "";
-        for (int i = 1; i < dotAmount; i++) {
-            dots += ".";
+        System.out.print(word);
+        for (int i = 1; i < dotAmount + 1; i++) {
+            System.out.print(".");
         }
-        System.out.println(word + dots + word2);
+        System.out.println(word2);
+
+
+
     }
     public static void ex7(){
         Scanner reader = new Scanner(System.in);
