@@ -1,31 +1,24 @@
 package rvt;
-import java.util.*;
-public class MainProgramm {
+ import java.util.*;
+ public class MainProgram {
     public static void main(String[] args) {
-    int number = 0 ; 
-    int sum = 0;
-    int evensum = 0; 
-    int oddsum = 0;
-    System.out.println("Enter numbers");
-    Scanner reader = new Scanner(System.in);
-    while (true) {
-        number = reader.nextInt();
-        if (number == -1) {
-            break ;
-        }
-        sum += number ; 
+        Scanner reader = new Scanner(System.in);
         
-        if (number % 2 == 0) {
-            evensum += number;
+        Statistics sum = new Statistics();
+        Statistics even = new Statistics();
+        Statistics odd = new Statistics();
+        System.out.println("Enter numbers: ");
+        while (true) {
+            int number = Integer.valueOf(reader.nextLine());
+            if (number == -1) {
+                break;
+            }
+            sum.addNumber(number);
+            if (number % 2 == 0) {
+                even.addNumber(number);
+            } else {
+                odd.addNumber(number);
+            }
         }
-        else{
-            oddsum += number;
-        }
-    }
-    System.out.println("Sum is : " + sum);
-    System.out.println("Even sum is : " + evensum);
-    System.out.println("Odd sum is : " + oddsum);
-
-
     }
 }
