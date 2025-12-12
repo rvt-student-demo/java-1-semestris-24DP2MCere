@@ -19,6 +19,15 @@ public class Counter {
         }
     }
 
+    public void increase() {
+        this.count  ++;
+    }
+
+    public void decrease() {
+        this.count --;
+    }
+
+
     public void decrease(int decreaseBy) {
         if (decreaseBy < 0) {
             return;
